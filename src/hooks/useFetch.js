@@ -10,7 +10,6 @@ export const useFetch = ( url ) => {
 
     })
 
-
     const getFetch = async () =>{
 
         setEstate({
@@ -20,7 +19,7 @@ export const useFetch = ( url ) => {
 
         const resp = await fetch(url);
         const data  = await resp.json();
-        console.log(data)
+        
 
         setEstate({
             data: data,
@@ -34,11 +33,6 @@ export const useFetch = ( url ) => {
         
     }, [url])
     
-   
-
-
-
-
 
   return { 
     data:      estate.data, 
