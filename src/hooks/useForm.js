@@ -18,7 +18,7 @@ export const useForm = ( initialForm = {} ) => {
             [ name ] : value
 
         })
-        console.log(name, value)
+        // console.log(name, value)
 
     }
 
